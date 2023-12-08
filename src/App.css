@@ -1,0 +1,53 @@
+.navhome{
+color: white;
+
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 1200;
+}
+
+.navbar-container{
+  display: flex;
+margin: 0 auto;
+justify-content: space-between;
+  margin-top: 0 auto;
+  width: 75%;
+}
+
+.footer{
+  background-color: #414f6b;
+  height: 74px;
+  top: calc(100vh - 74px);
+  width: 100%;
+  position: absolute;
+}
+
+.footer-container{
+  margin: 0 auto;
+  width: 75%;
+}
+
+.menu{
+  display: flex;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.hero img{
+top: 0;
+height: calc(100vh - 74px);
+object-fit: cover;
+position: absolute;
+  width: 100%;
+} 
+
+.item{
+  font-family: 'Lato', sans-serif;
+  
+}
+
+.navhome img{
+  width: 43px;
+  height: 43px;
+}
