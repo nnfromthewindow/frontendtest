@@ -1,41 +1,43 @@
-import { useState, useEffect } from "react"
+import { useEffect, useState  } from "react"
 
 const mountains = [{
   name: 'MOUNTAIN 1',
+  isSelected: true,
   schedule:[{
     date:'25 Nov 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   },
   {
     date:'28 Nov 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   },
   {
     date:'18 Dec 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   },
   {
     date:'7 Jan 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   }]
 },
 {
   name: 'MOUNTAIN 2',
+  isSelected: false,
   schedule:[{
     date:'22 Nov 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   },
   {
     date:'21 Nov 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   },
   {
     date:'15 Dec 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   },
   {
     date:'2 Jan 2016',
-    info: 'Vestibulum'
+    info: 'Vestibulum viberra'
   }]
 }]
 
@@ -43,11 +45,18 @@ const Team = () => {
 
   const [schedule, setSchedule] = useState()
 
-
-    if(!schedule){
-      setSchedule(mountains[0].schedule)
-    }
+  useEffect(()=>{
+    setSchedule(mountains[0].schedule)
+    selectTab(mountains[0])
+  },[])
+   
   
+  const selectTab = (mountain) =>{
+    mountains.forEach((moun)=>{
+      moun.isSelected=false
+    })
+    mountain.isSelected=true
+  }  
 
   return (
     <div className="team">
@@ -62,7 +71,10 @@ const Team = () => {
       </div>
       <div className="tabs-container">
         <div className="tabs-flexbox">
-          {mountains.map((mountain,i)=>{return <h3 onClick={()=>setSchedule(mountain.schedule)} key={i} className="team-tab">{mountain.name}</h3>})}
+          {mountains.map((mountain,i)=>{return <h3 onClick={()=>{
+            setSchedule(mountain.schedule)
+            selectTab(mountain)
+            }} key={i} className={mountain.isSelected ? 'team-tab__selected' :'team-tab'}>{mountain.name}</h3>})}
         </div>
       </div>
       <div className="schedule">
@@ -72,8 +84,9 @@ const Team = () => {
           <ul className="schedule-table">
             {schedule && schedule.map((sch,i)=>{
               return <li key={i} className="schedule-table__row">
-                <span></span>
-                {sch.date} {sch.info}</li>
+                <span className="schedule-date">{sch.date}</span>
+                <span className="schedule-info">{sch.info}</span>
+                 </li>
             })}
           </ul>
           </div>

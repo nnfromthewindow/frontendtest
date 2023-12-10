@@ -183,13 +183,29 @@ position: absolute;
 
 .team-tab{
   color: #b0b4be;
-  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif; 
   padding:10px;
+  
+}
+
+.team-tab__selected{
+  background-color: #b0b4be;
+  color: #414f6b;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif; 
+  padding:10px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .schedule{
   margin: 0 auto;
   width: 75%;
+}
+
+.schedule-table{
+  margin-top: 10px;
 }
 
 .schedule-box{
@@ -208,4 +224,11 @@ position: absolute;
 
 .schedule-box__container{
   padding: 20px 30px;
+}
+
+.schedule-table__row{
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: space-between;
+  padding: 9px;
 }
