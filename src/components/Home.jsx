@@ -7,7 +7,7 @@ const Home = () =>{
     return <>
   
     <nav className="navhome">
-        <div className="navbar-container">
+        <div className="homebar-container">
         <img src="./public/logo.png" alt="logo" />
         <div className="menu">
         <h3 className="item" onClick={()=>navigate('/history')} >01. HISTORY</h3>

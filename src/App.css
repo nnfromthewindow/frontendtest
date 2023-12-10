@@ -6,15 +6,35 @@ width: 100%;
 z-index: 1200;
 }
 
-.navbar-container{
+.navbar-box{
   display: flex;
-margin: 0 auto;
-justify-content: space-between;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.homebar-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-top: 0 auto;
   width: 75%;
 }
+
+.navbar-container{
+  margin: 0 auto;
+  width:100%;
+}
+
 .navbarlogo{
   cursor: pointer;
+  width: 43px;
+  height: 43px;
+}
+
+.textlogo{
+  cursor: pointer;
+  height: 33px;
+  padding-bottom: 4px;
 }
 
 .footer{
@@ -49,6 +69,7 @@ width: 75%;
   display: flex;
   gap: 50px;
   margin-top: 15px;
+  text-wrap: nowrap;
 }
 
 .hero img{
@@ -69,4 +90,122 @@ position: absolute;
 .navhome img{
   width: 43px;
   height: 43px;
+}
+
+.history{
+  background-image: url('../public/history.jpg');
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.team{
+  background-image: url('../public/team.jpg');
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.history-title{
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 75%;
+}
+
+.team-title{
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 75%;
+}
+
+.number-container{
+  display: flex;
+
+}
+
+.number{
+  color: #414f6b;
+  font-family: 'Oswald', sans-serif;
+  font-size: 5em;
+  opacity: 0.5;
+  
+}
+
+.title{
+  color: #414f6b;
+  font-family: 'Oswald', sans-serif;
+  margin-left: -15px;
+  padding-top: 45px;
+}
+
+.text-content{
+  font-family: 'Lato', sans-serif;
+  margin-left: 35px;
+}
+
+.textclimb-content{
+  font-family: 'Lato', sans-serif;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.glide-container{
+  background-color: #414f6b7e;
+  height: 195px;
+  position: absolute;
+  top: 60vh;
+  width: 100%;
+}
+
+.glide__slide img{
+  height: 135px;
+  margin-top: 30px;
+  width: 220px;
+}
+
+.tabs-container{
+  background-color: #414f6b;
+  height: 40px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.tabs-flexbox{
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.team-tab{
+  color: #b0b4be;
+  font-family: 'Oswald', sans-serif;
+  padding:10px;
+}
+
+.schedule{
+  margin: 0 auto;
+  width: 75%;
+}
+
+.schedule-box{
+  background-color: white;
+  height: 229px;
+  margin-left: 30px;
+  margin-top: 100px;
+  width: 352px;
+}
+
+.schedule-title{
+  color: #414f6b;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+}
+
+.schedule-box__container{
+  padding: 20px 30px;
 }
