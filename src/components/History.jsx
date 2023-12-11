@@ -8,19 +8,19 @@ const sliderConfiguration= {
 };
 
 const images = [{
-  src: '/public/thumb_1.jpg',
+  src: 'thumb_1.jpg',
   alt: "Mountain"
 },
 {
-  src: '/public/thumb_2.jpg',
+  src: 'thumb_2.jpg',
   alt: "Mountain"
 },
 {
-  src: '/public/thumb_1.jpg',
+  src: 'thumb_1.jpg',
   alt: "Mountain"
 },
 {
-  src: '/public/thumb_2.jpg',
+  src: 'thumb_2.jpg',
   alt: "Mountain"
 },]
 
