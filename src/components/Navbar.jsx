@@ -13,8 +13,8 @@ const Navbar = () => {
     <nav className="navbar">
         <div className="navbar-box">
             <div className="navbar-container">
-                <img src="./public/logo.png" alt="logo" className="navbarlogo" onClick={()=>navigate('/')}/>
-                <img src="./public/navbartext.png" alt="textlogo" className="textlogo" onClick={()=>navigate('/')}/>
+                <img src="logo.png" alt="logo" className="navbarlogo" onClick={()=>navigate('/')}/>
+                <img src="navbartext.png" alt="textlogo" className="textlogo" onClick={()=>navigate('/')}/>
             </div>
             <div className="menu">
                 <h3 className="item" onClick={()=>navigate('/history')} >01. HISTORY</h3>
